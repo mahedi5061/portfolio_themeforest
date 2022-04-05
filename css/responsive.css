@@ -1,0 +1,43 @@
+@media screen and (max-width: 992px) {
+  .menu-btn {
+    display: block;
+  }
+  .navbar .icons {
+    display: none;
+  }
+  .navbar .navbar-menu .menu-item {
+    display: block;
+    position: absolute;
+    background: var(--body-color);
+    top: 120px;
+    right: 0;
+    margin-right: -700px;
+    width: 100%;
+    height: auto;
+    padding: 33px;
+    height: 100vh;
+    transition: var(--transition);
+    border-radius: 8px;
+    box-shadow: 2px 4px 9px 0px;
+  }
+  .navbar .navbar-menu .menu-item.active {
+    margin-right: 0px;
+  }
+  .navbar .navbar-menu .menu-item li {
+    padding: 10px;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  .navbar .navbar-menu .menu-item li a::after {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+}
+
+@media screen and (max-width: 450px) {
+  html {
+    font-size: 50%;
+  }
+}
