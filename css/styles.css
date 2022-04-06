@@ -96,13 +96,13 @@ input,
 textarea {
   font-family: var(--body-font);
   font-size: var(--normal-font-size);
-  overflow-x: hidden;
 }
 
 body {
   background-color: var(--body-color);
   color: var(--text-color);
   transition: 0.4s; /* for light mode animation */
+  overflow-x: hidden;
 }
 
 h1,
@@ -272,10 +272,36 @@ img {
   height: 102%;
 }
 
-.menu-btn {
-  font-size: 20px;
+/* .navbar .btn { display: none; } */
+
+.nav-toggle-btn {
+  width: 50px;
+  height: 50px;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+}
+
+.nav-toggle-btn span {
+  background: var(--text-color);
+  width: 30px;
+  height: 2px;
+  transition: var(--transition);
+}
+
+.nav-toggle-btn.active .one {
+  transform: rotate(45deg) translate(3px, 3px);
+}
+
+.nav-toggle-btn.active .two {
   display: none;
-  cursor: pointer;
+}
+
+.nav-toggle-btn.active .three {
+  transform: rotate(-45deg) translate(2px, -3px);
 }
 
 /* Active link */

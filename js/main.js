@@ -2,7 +2,7 @@
 
 // navbar variables
 const navbarNav = document.querySelector(".menu-item");
-const navbarToggleBtn = document.querySelector(".menu-btn");
+const navbarToggleBtn = document.querySelector(".nav-toggle-btn");
 
 // navbar toggle functionality
 navbarToggleBtn.addEventListener("click", function () {
