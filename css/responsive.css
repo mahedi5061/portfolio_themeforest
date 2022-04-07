@@ -1,4 +1,5 @@
 @media screen and (max-width: 992px) {
+  /* NAVBAR CONTENT START*/
   .navbar .icons {
     display: none;
   }
@@ -12,13 +13,14 @@
     background: var(--body-color);
     top: 120px;
     right: 0;
-    margin-right: -700px;
+    margin-right: -1000px;
     width: 100%;
     padding: 33px;
     height: 100vh;
     transition: var(--transition);
     border-radius: 8px;
     box-shadow: 0px 0px 9px 0px;
+    z-index: 9999;
   }
   .navbar .navbar-menu .menu-item.active {
     margin-right: 0px;
@@ -31,12 +33,44 @@
   .navbar .navbar-menu .menu-item li a::after {
     display: none;
   }
+  /* NAVBAR CONTENT END*/
+
+  /* HEADER CONTENT START*/
+
+  .header .header-content {
+    display: block;
+  }
+  .header .header-content .header-content-left {
+    width: 100%;
+  }
+  .header .header-content .header-content-left .header-content-text {
+    width: 100%;
+  }
+  .header .header-content .header-content-left .header-common-content {
+    line-height: 3rem;
+  }
+  .header-content-left .header-name-content {
+    font-size: 30px;
+  }
+  .header-content-left .header-profession-content {
+    font-size: 20px;
+  }
+  .header .header-content .header-content-right {
+    margin-top: 50px;
+  }
+  .header .header-content .header-content-right img {
+    width: 100%;
+  }
+  /* HEADER CONTENT END*/
 }
 
 @media screen and (min-width: 993px) {
   .navbar .menu-btn {
     display: none;
   }
+  /* .navbar .logo {
+    margin-left: -30px;
+  } */
 }
 
 @media screen and (max-width: 450px) {

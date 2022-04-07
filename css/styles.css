@@ -144,17 +144,13 @@ img {
 /*=============== REUSABLE CSS CLASSES ===============*/
 .container {
   max-width: 1440px;
-  margin-left: 2rem;
-  margin-right: 2rem;
+  margin-left: 3rem;
+  margin-right: 3rem;
 }
 
 .grid {
   display: grid;
   gap: 1.25rem;
-}
-
-.main {
-  overflow: hidden;
 }
 
 .section {
@@ -179,6 +175,9 @@ img {
 }
 
 /*=============== HEADER & NAV START===============*/
+
+/* NAVBAR CONTENT START*/
+
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -190,6 +189,7 @@ img {
 .navbar .logo {
   width: 140px;
   cursor: pointer;
+  /* background-color: white; */
 }
 
 .navbar .navbar-menu .menu-item {
@@ -302,10 +302,54 @@ img {
 .nav-toggle-btn.active .three {
   transform: rotate(-45deg) translate(2px, -3px);
 }
+/* NAVBAR CONTENT END*/
 
-/* Active link */
+/* HEADER CONTENT START*/
+.header .header-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 4rem;
+}
 
-/* Change background header */
+.header .header-content .header-content-left {
+  width: 50%;
+}
+
+.header .header-content .header-content-left .header-common-content {
+  line-height: 3.5rem;
+}
+.header .header-content .header-content-left .header-welcome-content {
+  text-transform: uppercase;
+  font-size: 14px;
+  letter-spacing: 1.5px;
+  font-weight: var(--font-medium);
+}
+.header .header-content .header-content-left .header-name-content {
+  font-size: 40px;
+  letter-spacing: 1px;
+}
+.header .header-content .header-content-left .header-profession-content {
+  font-size: 25px;
+  text-transform: capitalize;
+}
+.header .header-content .header-content-left .header-content-text {
+  width: 75%;
+  text-align: justify;
+  padding-top: 10px;
+}
+.header .header-content .header-content-right {
+  background: linear-gradient(to right, #1672dc, var(--primary-color));
+  border-radius: 10px;
+  border: 5px solid rgb(35, 34, 34);
+}
+.header .header-content .header-content-right img {
+  width: 500px;
+  background-color: #c4cfde;
+  transform: rotate(5deg);
+  border-radius: 10px;
+}
+/* HEADER CONTENT END*/
 
 /*=============== HEADER & NAV END===============*/
 
