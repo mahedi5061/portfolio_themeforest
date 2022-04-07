@@ -1,7 +1,7 @@
 @media screen and (max-width: 992px) {
   .container {
-    margin-left: 1.5rem;
-    margin-right: 1.5rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
   }
   /* NAVBAR CONTENT START*/
   .navbar .icons {
@@ -43,6 +43,7 @@
 
   .header .header-content {
     display: block;
+    padding-top: 0rem;
   }
   .header .header-content .header-content-left {
     width: 100%;
