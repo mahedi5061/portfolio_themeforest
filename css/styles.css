@@ -329,6 +329,9 @@ img {
   font-size: 40px;
   letter-spacing: 1px;
 }
+/* .type-wrapper {
+  display: flex;
+} */
 .header .header-content .header-content-left .header-profession-content {
   font-size: 25px;
   text-transform: capitalize;
@@ -349,6 +352,144 @@ img {
   transform: rotate(5deg);
   border-radius: 10px;
 }
+
+.wrapper {
+  display: flex;
+}
+.wrapper .static-txt {
+  color: #fff;
+  font-size: 25px;
+  font-weight: 400;
+}
+.wrapper .dynamic-txts {
+  margin-left: 15px;
+  height: 85px;
+  line-height: 90px;
+  overflow: hidden;
+}
+.dynamic-txts li {
+  list-style: none;
+  color: #fc6d6d;
+  font-size: 25px;
+  font-weight: 500;
+  position: relative;
+  top: -25px;
+  animation: slide 12s steps(4) infinite;
+}
+@keyframes slide {
+  100% {
+    top: -390px;
+  }
+}
+.dynamic-txts li span {
+  position: relative;
+  margin: 5px 0;
+  line-height: 80px;
+}
+.dynamic-txts li span::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background: var(--body-color);
+  border-left: 2px solid #fc6d6d;
+  animation: typing 3s steps(10) infinite;
+}
+@keyframes typing {
+  40%,
+  60% {
+    left: calc(100% + 30px);
+  }
+  100% {
+    left: 0;
+  }
+}
+
+/* 
+.dynamic-text {
+  margin-left: 15px;
+  height: 90px;
+  line-height: 90px;
+  overflow: hidden;
+}
+
+.dynamic-text li {
+  position: relative;
+  top: 0;
+  animation: slide 5s steps(4) infinite;
+  color: var(--primary-color);
+  font-size: 25px;
+}
+.dynamic-text li span {
+  position: relative;
+  margin: 5px 0;
+  line-height: 90px;
+  top: 0;
+  animation: slide 5s steps(4) infinite;
+  color: var(--primary-color);
+  font-size: 25px;
+}
+
+@keyframes slide {
+  100% {
+    top: -360px;
+  }
+}
+.dynamic-text li span::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #343f4f;
+  border-left: 2px solid var(--primary-color);
+  animation: typing 1.5s steps(20) infinite;
+}
+@keyframes typing {
+  100% {
+    left: 100%;
+    margin: 0 -35px 0 35px;
+  }
+} */
+/* 
+#typing {
+  width: 0ch;
+  color: var(--primary-color);
+  float: left;
+  overflow: hidden;
+  white-space: nowrap;
+  animation: typing 4s steps(20) 1s infinite alternate;
+}
+#typing span {
+  color: var(--primary-color);
+}
+
+#crow {
+  color: var(--primary-color);
+  float: left;
+  font-weight: bold;
+  font-size: 15px;
+  animation: crow 0.5s linear 1s infinite;
+}
+@keyframes typing {
+  from {
+    width: 0ch;
+  }
+  to {
+    width: 23ch;
+  }
+}
+@keyframes crow {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+} */
+
 /* HEADER CONTENT END*/
 
 /*=============== HEADER & NAV END===============*/
